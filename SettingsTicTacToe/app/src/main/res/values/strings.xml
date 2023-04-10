@@ -1,0 +1,30 @@
+<!--This file contains all string values used to design the app. -->
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="player_x_turn">Player X \'s Turn</string>
+    <string name="player_0_turn">Player 0 \'s Turn</string>
+    <string name="reset">RESET</string>
+    <string name="welcome_to_tic_tac_toe_game">Welcome to Tic Tac Toe Game</string>
+    <string name="help">Help</string>
+    <string name="n">null</string>
+    <string name="score_x">playerXScore</string>
+    <string name="score_0">player0score</string>
+    <string name="scoreboard">scoreboard</string>
+    <!-- <string name="gamescoreboard">GameScoreBoard</string>-->
+    <string name="exit_app">Exit-App</string>
+    <string name="game_rules">Game Rules</string>
+    <string name="instructions">How to Play:
+<u>
+    <li>The game is played on a 3x3 grid.</li>
+
+    <li>There are two players in the game. One player uses "X" and the other player uses "O".</li>
+
+<li>The game starts with an empty grid, and the first player places their mark in any square.</li>
+
+    <li>The second player then places their mark in any remaining square.</li>
+
+    <li>The players take turns placing their marks on the grid until one of them gets three marks in a row (horizontally, vertically, or diagonally).</li>
+
+    <li>If all squares are filled without any player getting three in a row, then the game is considered a draw.</li></u></string>
+    <string name="back">Back</string>
+</resources>

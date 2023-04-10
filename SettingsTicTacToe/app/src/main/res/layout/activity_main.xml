@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/back_image">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_tic_tac_toe_game"
+        android:textStyle="bold"
+        android:textSize="@dimen/label_text_size"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40sp"/>
+
+
+    <!--textview to display whose turn it is-->
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_x_turn"
+        style="@style/MyTextStyle"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80sp"/>
+
+    <!--textview with a context menu attached  to display the scoreboard  -->
+    <TextView
+        android:id="@+id/scoreboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scoreboard"
+        style="@style/MyTextStyle"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="120sp"/>
+
+    <!--Entire game-board 3*3 with gridlayout-->
+    <GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:useDefaultMargins="true"
+       android:layout_centerInParent="true">
+
+        <!-- game-board cells using 9 buttons-->
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="30sp"
+            android:contentDescription="@string/n"
+            android:tag="1"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+        <Button
+            android:id="@+id/button_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="30sp"
+            android:tag="2"
+            android:contentDescription="@string/n"
+            />
+        <Button
+            android:id="@+id/button_3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="30sp"
+            android:tag="3"
+            android:contentDescription="@string/n"
+            />
+        <Button
+            android:id="@+id/button_4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="30sp"
+            android:tag="4"
+            android:contentDescription="@string/n"
+            />
+        <Button
+            android:id="@+id/button_5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="30sp"
+            android:tag="5"
+            android:contentDescription="@string/n"
+            />
+        <Button
+            android:id="@+id/button_6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="30sp"
+            android:tag="6"
+            android:contentDescription="@string/n"
+            />
+        <Button
+            android:id="@+id/button_7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="30sp"
+            android:tag="7"
+            android:contentDescription="@string/n"
+            />
+        <Button
+            android:id="@+id/button_8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="30sp"
+            android:tag="8"
+            android:contentDescription="@string/n"
+            />
+        <Button
+            android:id="@+id/button_9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="30sp"
+            android:tag="9"
+            android:contentDescription="@string/n"
+            />
+    </GridLayout>
+
+    <!--Reset button to reset the game-board-->
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        style="@style/MyButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80sp"
+        />
+
+    <!--Exit button to exit app and displays homescreen-->
+    <Button
+        android:id="@+id/button_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exit_app"
+        style="@style/MyButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignBaseline="@id/button_reset"
+        android:layout_toEndOf="@id/button_reset"
+        android:layout_marginStart="60sp"/>
+
+    <!--help button to go to fragment to read the instructions-->
+    <Button
+        android:id="@+id/fragment1btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/help"
+        style="@style/MyButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="80sp"
+        tools:ignore="RelativeOverlap" />
+
+    <!--fragment to load the help page-->
+    <androidx.fragment.app.FragmentContainerView
+        android:name="com.zybooks.settingstictactoe.FragmentHelp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/fragmentContainer"/>
+
+
+</RelativeLayout>

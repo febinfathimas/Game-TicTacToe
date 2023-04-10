@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file contains the  design of context menu attached to a scoreboard textview-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/option_1"
+        android:title="@string/score_x"/>
+    <item
+        android:id="@+id/option_2"
+       android:title="@string/score_0"/>
+</menu>
